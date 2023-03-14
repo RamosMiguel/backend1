@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package encuentro2y3;
+package guia2Encuentro2y3;
 
 import java.util.Scanner;
 

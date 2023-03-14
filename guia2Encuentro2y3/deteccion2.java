@@ -3,18 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package encuentro2y3;
+package guia2Encuentro2y3;
 
 /**
  *
  * @author caro
  */
-public class deteccionDeErrores {
+public class deteccion2 {
     public static void main(String[] args) {
-  String nombre;
-  boolean bandera;
-  char caracter16bits;
+int numero = 48;
+double decimales = 3.55;
+boolean bandera =false;
 }
 }
+
     
 
