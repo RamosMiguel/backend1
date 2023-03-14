@@ -11,17 +11,22 @@ import java.util.Scanner;
  *
  * @author Mininos
  */
-public class ejercicio8 {
+public class guiaEjercicio3 {
     public static void main(String[] args) {
-        int nota;
+        String frase;
         Scanner leer= new Scanner (System.in);
         
+        System.out.println("ingrese una frase de 8 caracteres");
+        frase= leer.nextLine();
         
-        do{
-            
-        System.out.println("ingrese una nota");
-        nota=leer.nextInt();
+        if(frase.length()==8){
+            System.out.println("correcto");
+        }else{
+            System.out.println("incorrecto");
+        }
         
-        }while (nota<0 || nota>10);
+        
+        
+        
     }
 }
