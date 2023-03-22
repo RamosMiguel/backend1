@@ -3,26 +3,26 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package backend1.guia5Encuentro91011;
+package guia5Encuentro91011;
 
 import java.util.Scanner;
 
 /**
  *
- * @author Miguel
+ * @author Mininos
  */
 public class ejercicio14 {
-     public static void main(String[] args) {
-        String[] equipo= new String[10];
-        Scanner leer= new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner leer = new Scanner(System.in);
+        String equipo[] = new String[12];
         
-         for (String integrante:equipo) {
-             integrante=leer.next();
-         }
-        
-        
+        for (int i = 0; i < 12; i++) {
+            equipo[i]=leer.next();
+        }
+        System.out.println("mi equipo");
+        for (int i = 0; i < 12; i++) {
+            System.out.println( equipo[i]); 
+        }
         
     }
-     
-     
 }

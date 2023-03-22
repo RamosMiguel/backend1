@@ -3,38 +3,36 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package backend1.guia5Encuentro91011;
+package guia5Encuentro91011;
 
 /**
  *
- * @author Miguel
+ * @author Mininos
  */
 public class guiaEjercicio1 {
     public static void main(String[] args) {
-        int[] vector= new int[100];
+        int[] lista= new int[100];
         
-        llenar(vector);
+        rellenar(lista);
         
-        mostrar(vector);
-        
+        mostrar(lista);
         
     }
 
-    private static void llenar(int[] vector) {
-        int cont=1;
-         
-        for (int i = 0; i < vector.length; i++) {
-            vector[i]=i+1;
+    private static void rellenar(int[] lista) {
+       int tam=lista.length;
+        System.out.println(tam);
+        for (int i = 0; i < tam; i++) {
+            lista[i]=i;
         }
- 
-    
     
     }
 
-    private static void mostrar(int[] vector) {
+    private static void mostrar(int[] lista) {
+        int tam=lista.length;
         
-        for (int i = vector.length-1; i >=0; i--) {
-            System.out.println(vector[i]);
+        for (int i = tam-1; i > 0; i--) {
+             System.out.println(lista[i]);
         }
     
     }
