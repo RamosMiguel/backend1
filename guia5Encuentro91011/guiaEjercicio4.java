@@ -3,61 +3,56 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package backend1.guia5Encuentro91011;
+package guia5Encuentro91011;
 
 /**
  *
- * @author Miguel
+ * @author Mininos
  */
 public class guiaEjercicio4 {
     public static void main(String[] args) {
-        int[][] matriz= new int[3][3];
+        int dim=3;
+        int[][] matriz= new  int[dim][dim];
         
+        rellenarAutomatico(matriz,dim);
         
-        llenarAutomatico(matriz);
+        mostarMatriz(matriz,dim);
         
-        mostrarMatriz(matriz);
-        
-        trasponerMatriz(matriz);
-        
-        mostrarMatriz(matriz);
+        mostrarTranspuesta(matriz,dim);
     }
 
-    private static void llenarAutomatico(int[][] matriz) {
-        for (int[] vector:matriz) {
-            for (int j = 0; j < vector.length; j++) {
-                vector[j]=(int)(Math.random()*10);
-                
+    private static void rellenarAutomatico(int[][] matriz, int dim) {
+        for (int i = 0; i < dim; i++) {
+            for (int j = 0; j < dim; j++) {
+                matriz[i][j]=(int)(Math.random()*10);
                 
             }
- 
         }
     }
 
-    private static void mostrarMatriz(int[][] matriz) {
-        for (int[] vector:matriz) {
-            for (int j = 0; j < vector.length; j++) {
-                System.out.print(" "+ vector[j] +" ");
-                
+    private static void mostarMatriz(int[][] matriz,int dim) {
+        for (int i = 0; i < dim; i++) {
+            for (int j = 0; j < dim; j++) {
+                System.out.print(" "+matriz[i][j]+" ");
                 
             }
-            System.out.println("");
+            System.out.println(" ");
         }
         
     }
 
-    private static void trasponerMatriz(int[][] matriz) {
-        for (int[] vector:matriz) {
-            for (int j = 0; j < vector.length; j++) {
-                System.out.print(" "+ vector[j] +" ");
-                
+    private static void mostrarTranspuesta(int[][] matriz, int dim) {
+        System.out.println(" ");
+        System.out.println("matriz transpuesta");
+        System.out.println(" ");
+        
+        for (int j = 0; j < dim; j++) {
+            for (int i = 0; i < dim; i++) {
+                System.out.print(" "+matriz[i][j]+" ");
                 
             }
-            System.out.println("");
+            System.out.println(" ");
         }
     
     }
-    
-    
-    
 }

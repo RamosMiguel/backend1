@@ -3,14 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package guia5Encuentro91011;
+package guia3Encuentro45y6;
 
 /**
  *
  * @author Mininos
  */
-public class ejercicio13 {
-    public static void main(String[] args) {
-        String equipo[] = new String[12];
-    }
+public class ejercicioExtra1 {
+    
 }

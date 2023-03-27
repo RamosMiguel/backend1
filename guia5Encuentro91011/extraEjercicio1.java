@@ -9,8 +9,8 @@ package guia5Encuentro91011;
  *
  * @author Mininos
  */
-public class ejercicio13 {
+public class extraEjercicio1 {
     public static void main(String[] args) {
-        String equipo[] = new String[12];
+       
     }
 }
